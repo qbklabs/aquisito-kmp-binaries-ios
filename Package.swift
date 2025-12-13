@@ -9,8 +9,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "AquisitoCore",
-            targets: ["AquisitoCore"]
+            name: "shared",
+            targets: ["shared"]
         ),
     ],
     targets: [
