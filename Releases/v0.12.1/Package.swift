@@ -1,5 +1,5 @@
 // swift-tools-version:5.6
-// Automatically generated - do not edit manually
+// Version: v0.12.1
 import PackageDescription
 
 let package = Package(
@@ -16,8 +16,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AquisitoCore",
-            url: "https://github.com/qbklabs/aquisito-kmp-binaries-ios/releases/download/v0.12.1/AquisitoCore.xcframework.zip",
-            checksum: "695b963a869c405113dc41890be525609b0c1e82ea7ead2ad6a23a8222445c6f"
+            path: "./AquisitoCore.xcframework"
         )
     ]
 )
