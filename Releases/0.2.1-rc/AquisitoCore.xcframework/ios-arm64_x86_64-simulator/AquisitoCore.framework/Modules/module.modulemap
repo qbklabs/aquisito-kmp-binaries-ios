@@ -1,0 +1,5 @@
+framework module "AquisitoCore" {
+    umbrella header "AquisitoCore.h"
+    export *
+    module * { export * }
+}
