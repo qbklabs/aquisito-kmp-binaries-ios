@@ -16,8 +16,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AquisitoCore",
-            url: "https://github.com/qbklabs/aquisito-kmp-binaries-ios/releases/download/v0.26.3/AquisitoCore.xcframework.zip",
-            checksum: "08b9b88cd1b423ec8f88add19c77e04fb8b86a74472723a4293dd2f0ad0b81ff"
+            url: "https://github.com/qbklabs/aquisito-kmp-binaries-ios/releases/download/v0.26.4/AquisitoCore.xcframework.zip",
+            checksum: "1606778eb4f016fb3fa8bc925e55ee5e5efd9fbff762c5aeaed0b25c2f7e1de8"
         )
     ]
 )
