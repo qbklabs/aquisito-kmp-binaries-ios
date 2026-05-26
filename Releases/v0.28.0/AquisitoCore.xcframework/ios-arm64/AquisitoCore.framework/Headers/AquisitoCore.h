@@ -947,14 +947,14 @@ __attribute__((swift_name("CategoryDto.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CollectionDto")))
 @interface AquisitoCoreCollectionDto : AquisitoCoreBase
-- (instancetype)initWithId:(int32_t)id slug:(NSString *)slug name:(NSString *)name description:(NSString *)description type:(NSString *)type is_public:(BOOL)is_public track_changes:(BOOL)track_changes places:(NSArray<AquisitoCorePlaceDetailDto *> *)places created_at:(NSString * _Nullable)created_at __attribute__((swift_name("init(id:slug:name:description:type:is_public:track_changes:places:created_at:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int32_t)id slug:(NSString *)slug name:(NSString *)name description:(NSString * _Nullable)description type:(NSString *)type is_public:(BOOL)is_public track_changes:(BOOL)track_changes places:(NSArray<AquisitoCorePlaceDetailDto *> *)places created_at:(NSString * _Nullable)created_at __attribute__((swift_name("init(id:slug:name:description:type:is_public:track_changes:places:created_at:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) AquisitoCoreCollectionDtoCompanion *companion __attribute__((swift_name("companion")));
-- (AquisitoCoreCollectionDto *)doCopyId:(int32_t)id slug:(NSString *)slug name:(NSString *)name description:(NSString *)description type:(NSString *)type is_public:(BOOL)is_public track_changes:(BOOL)track_changes places:(NSArray<AquisitoCorePlaceDetailDto *> *)places created_at:(NSString * _Nullable)created_at __attribute__((swift_name("doCopy(id:slug:name:description:type:is_public:track_changes:places:created_at:)")));
+- (AquisitoCoreCollectionDto *)doCopyId:(int32_t)id slug:(NSString *)slug name:(NSString *)name description:(NSString * _Nullable)description type:(NSString *)type is_public:(BOOL)is_public track_changes:(BOOL)track_changes places:(NSArray<AquisitoCorePlaceDetailDto *> *)places created_at:(NSString * _Nullable)created_at __attribute__((swift_name("doCopy(id:slug:name:description:type:is_public:track_changes:places:created_at:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString * _Nullable created_at __attribute__((swift_name("created_at")));
-@property (readonly) NSString *description_ __attribute__((swift_name("description_")));
+@property (readonly) NSString * _Nullable description_ __attribute__((swift_name("description_")));
 @property (readonly) int32_t id __attribute__((swift_name("id")));
 @property (readonly) BOOL is_public __attribute__((swift_name("is_public")));
 @property (readonly) NSString *name __attribute__((swift_name("name")));
@@ -1963,21 +1963,21 @@ __attribute__((swift_name("TagDto.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("UserDto")))
 @interface AquisitoCoreUserDto : AquisitoCoreBase
-- (instancetype)initWithId:(int32_t)id name:(NSString *)name email:(NSString *)email username:(NSString *)username email_verified_at:(NSString * _Nullable)email_verified_at phone:(NSString * _Nullable)phone avatar:(NSString * _Nullable)avatar created_at:(NSString *)created_at updated_at:(NSString *)updated_at __attribute__((swift_name("init(id:name:email:username:email_verified_at:phone:avatar:created_at:updated_at:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int32_t)id name:(NSString *)name email:(NSString *)email username:(NSString * _Nullable)username email_verified_at:(NSString * _Nullable)email_verified_at phone:(NSString * _Nullable)phone avatar:(NSString * _Nullable)avatar created_at:(NSString * _Nullable)created_at updated_at:(NSString * _Nullable)updated_at __attribute__((swift_name("init(id:name:email:username:email_verified_at:phone:avatar:created_at:updated_at:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) AquisitoCoreUserDtoCompanion *companion __attribute__((swift_name("companion")));
-- (AquisitoCoreUserDto *)doCopyId:(int32_t)id name:(NSString *)name email:(NSString *)email username:(NSString *)username email_verified_at:(NSString * _Nullable)email_verified_at phone:(NSString * _Nullable)phone avatar:(NSString * _Nullable)avatar created_at:(NSString *)created_at updated_at:(NSString *)updated_at __attribute__((swift_name("doCopy(id:name:email:username:email_verified_at:phone:avatar:created_at:updated_at:)")));
+- (AquisitoCoreUserDto *)doCopyId:(int32_t)id name:(NSString *)name email:(NSString *)email username:(NSString * _Nullable)username email_verified_at:(NSString * _Nullable)email_verified_at phone:(NSString * _Nullable)phone avatar:(NSString * _Nullable)avatar created_at:(NSString * _Nullable)created_at updated_at:(NSString * _Nullable)updated_at __attribute__((swift_name("doCopy(id:name:email:username:email_verified_at:phone:avatar:created_at:updated_at:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString * _Nullable avatar __attribute__((swift_name("avatar")));
-@property (readonly) NSString *created_at __attribute__((swift_name("created_at")));
+@property (readonly) NSString * _Nullable created_at __attribute__((swift_name("created_at")));
 @property (readonly) NSString *email __attribute__((swift_name("email")));
 @property (readonly) NSString * _Nullable email_verified_at __attribute__((swift_name("email_verified_at")));
 @property (readonly) int32_t id __attribute__((swift_name("id")));
 @property (readonly) NSString *name __attribute__((swift_name("name")));
 @property (readonly) NSString * _Nullable phone __attribute__((swift_name("phone")));
-@property (readonly) NSString *updated_at __attribute__((swift_name("updated_at")));
-@property (readonly) NSString *username __attribute__((swift_name("username")));
+@property (readonly) NSString * _Nullable updated_at __attribute__((swift_name("updated_at")));
+@property (readonly) NSString * _Nullable username __attribute__((swift_name("username")));
 @end
 
 __attribute__((objc_subclassing_restricted))
