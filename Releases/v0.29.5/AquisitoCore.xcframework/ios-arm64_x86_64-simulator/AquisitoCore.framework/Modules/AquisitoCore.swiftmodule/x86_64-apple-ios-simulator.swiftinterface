@@ -1,0 +1,2119 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name AquisitoCore
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+@_exported import AquisitoCore
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum Skie {
+  public enum RuntimeKotlin {
+    public enum SkieColdFlowIterator {
+      public typealias __Kotlin = AquisitoCore.SkieColdFlowIterator
+    }
+    public enum SkieKotlinFlow {
+      public typealias __Kotlin = AquisitoCore.SkieKotlinFlow
+    }
+    public enum SkieKotlinMutableSharedFlow {
+      public typealias __Kotlin = AquisitoCore.SkieKotlinMutableSharedFlow
+    }
+    public enum SkieKotlinMutableStateFlow {
+      public typealias __Kotlin = AquisitoCore.SkieKotlinMutableStateFlow
+    }
+    public enum SkieKotlinOptionalFlow {
+      public typealias __Kotlin = AquisitoCore.SkieKotlinOptionalFlow
+    }
+    public enum SkieKotlinOptionalMutableSharedFlow {
+      public typealias __Kotlin = AquisitoCore.SkieKotlinOptionalMutableSharedFlow
+    }
+    public enum SkieKotlinOptionalMutableStateFlow {
+      public typealias __Kotlin = AquisitoCore.SkieKotlinOptionalMutableStateFlow
+    }
+    public enum SkieKotlinOptionalSharedFlow {
+      public typealias __Kotlin = AquisitoCore.SkieKotlinOptionalSharedFlow
+    }
+    public enum SkieKotlinOptionalStateFlow {
+      public typealias __Kotlin = AquisitoCore.SkieKotlinOptionalStateFlow
+    }
+    public enum SkieKotlinSharedFlow {
+      public typealias __Kotlin = AquisitoCore.SkieKotlinSharedFlow
+    }
+    public enum SkieKotlinStateFlow {
+      public typealias __Kotlin = AquisitoCore.SkieKotlinStateFlow
+    }
+    public enum Skie_CancellationHandler {
+      public typealias __Kotlin = AquisitoCore.Skie_CancellationHandler
+    }
+    public enum Skie_DispatcherDelegate {
+      public typealias __Kotlin = AquisitoCore.Skie_DispatcherDelegate
+    }
+    public enum Skie_SuspendHandler {
+      public typealias __Kotlin = AquisitoCore.Skie_SuspendHandler
+    }
+    public enum Skie_SuspendResult {
+      public typealias __Kotlin = AquisitoCore.Skie_SuspendResult
+      public enum Success {
+        public typealias __Kotlin = AquisitoCore.Skie_SuspendResult.Success
+      }
+      public enum Error {
+        public typealias __Kotlin = AquisitoCore.Skie_SuspendResult.Error
+      }
+      public enum Canceled {
+        public typealias __Kotlin = AquisitoCore.Skie_SuspendResult.Canceled
+      }
+    }
+  }
+  public typealias co_touchlab_skie__runtime_kotlin = AquisitoCore.Skie.RuntimeKotlin
+  public enum KotlinxCoroutinesCore {
+    public enum Flow {
+      public typealias __Kotlin = AquisitoCore.Kotlinx_coroutines_coreFlow
+    }
+    public enum StateFlow {
+      public typealias __Kotlin = AquisitoCore.Kotlinx_coroutines_coreStateFlow
+    }
+    public enum SharedFlow {
+      public typealias __Kotlin = AquisitoCore.Kotlinx_coroutines_coreSharedFlow
+    }
+    public enum MutableSharedFlow {
+      public typealias __Kotlin = AquisitoCore.Kotlinx_coroutines_coreMutableSharedFlow
+    }
+    public enum MutableStateFlow {
+      public typealias __Kotlin = AquisitoCore.Kotlinx_coroutines_coreMutableStateFlow
+    }
+    public enum Runnable {
+      public typealias __Kotlin = AquisitoCore.Kotlinx_coroutines_coreRunnable
+    }
+    public enum SelectClause0 {
+    }
+    public enum SelectClause {
+    }
+    public enum SelectInstance {
+    }
+    public enum SelectClause1 {
+    }
+    public enum SelectClause2 {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_coroutines_core = AquisitoCore.Skie.KotlinxCoroutinesCore
+  public enum KtorUtils {
+    public enum Pipeline {
+    }
+  }
+  public typealias io_ktor__ktor_utils = AquisitoCore.Skie.KtorUtils
+  public enum Shared {
+    public enum ResultViewState {
+    }
+    public enum LocationRepository {
+      public enum StoredLocationResult {
+      }
+    }
+    public enum LocationClientResult {
+    }
+    public enum LocationError {
+    }
+    public enum LocationEvent {
+    }
+    public enum AuthEvent {
+    }
+  }
+  public typealias com_qbklabs_core_aquisito__shared = AquisitoCore.Skie.Shared
+  public enum KotlinxSerializationCore {
+    public enum SerialKind {
+    }
+    public enum SerializersModule {
+    }
+    public enum PolymorphicKind {
+    }
+    public enum PrimitiveKind {
+    }
+    public enum StructureKind {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_core = AquisitoCore.Skie.KotlinxSerializationCore
+  public enum KtorHttp {
+    public enum OutgoingContent {
+    }
+  }
+  public typealias io_ktor__ktor_http = AquisitoCore.Skie.KtorHttp
+  public enum KotlinxSerializationJson {
+    public enum JsonElement {
+    }
+    public enum JsonPrimitive {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_json = AquisitoCore.Skie.KotlinxSerializationJson
+}
+@_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func next() async -> T?
+  #endif
+  @objc deinit
+  public typealias Element = T
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = Swift.Never
+}
+public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
+  associatedtype Element
+  associatedtype Delegate : AquisitoCore.Kotlinx_coroutines_coreFlow
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : AquisitoCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> AquisitoCore.SkieKotlinFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> AquisitoCore.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = AquisitoCore.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = AquisitoCore.SkieKotlinFlow<Swift.AnyObject>
+  public typealias Delegate = any AquisitoCore.Kotlinx_coroutines_coreFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : AquisitoCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftOptionalFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> AquisitoCore.SkieKotlinOptionalFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> AquisitoCore.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = AquisitoCore.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = AquisitoCore.SkieKotlinOptionalFlow<Swift.AnyObject>
+  public typealias Delegate = any AquisitoCore.Kotlinx_coroutines_coreFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : AquisitoCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> AquisitoCore.SkieKotlinSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> AquisitoCore.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = AquisitoCore.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = AquisitoCore.SkieKotlinSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any AquisitoCore.Kotlinx_coroutines_coreSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : AquisitoCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftOptionalSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftOptionalSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> AquisitoCore.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> AquisitoCore.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = AquisitoCore.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = AquisitoCore.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any AquisitoCore.Kotlinx_coroutines_coreSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : AquisitoCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var subscriptionCount: AquisitoCore.SkieSwiftStateFlow<AquisitoCore.KotlinInt> {
+    get
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftMutableSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftMutableSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinMutableSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> AquisitoCore.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> AquisitoCore.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = AquisitoCore.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = AquisitoCore.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any AquisitoCore.Kotlinx_coroutines_coreMutableSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : AquisitoCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var subscriptionCount: AquisitoCore.SkieSwiftStateFlow<AquisitoCore.KotlinInt> {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T?) async throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func tryEmit(value: T?) -> Swift.Bool
+  #endif
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> AquisitoCore.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> AquisitoCore.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = AquisitoCore.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = AquisitoCore.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any AquisitoCore.Kotlinx_coroutines_coreMutableSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : AquisitoCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T {
+    get
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinStateFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinStateFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinStateFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> AquisitoCore.SkieKotlinStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> AquisitoCore.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = AquisitoCore.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = AquisitoCore.SkieKotlinStateFlow<Swift.AnyObject>
+  public typealias Delegate = any AquisitoCore.Kotlinx_coroutines_coreStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : AquisitoCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var value: T? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftOptionalStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftOptionalStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalStateFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> AquisitoCore.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> AquisitoCore.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = AquisitoCore.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = AquisitoCore.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  public typealias Delegate = any AquisitoCore.Kotlinx_coroutines_coreStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : AquisitoCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T {
+    get
+    set(value)
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  final public var subscriptionCount: AquisitoCore.SkieSwiftStateFlow<AquisitoCore.KotlinInt> {
+    get
+  }
+  final public func compareAndSet(expect: T, update: T) -> Swift.Bool
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftMutableStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftMutableStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinMutableStateFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> AquisitoCore.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> AquisitoCore.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = AquisitoCore.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = AquisitoCore.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  public typealias Delegate = any AquisitoCore.Kotlinx_coroutines_coreMutableStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : AquisitoCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var value: T? {
+    get
+    set(value)
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  final public var subscriptionCount: AquisitoCore.SkieSwiftStateFlow<AquisitoCore.KotlinInt> {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T?) async throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func tryEmit(value: T?) -> Swift.Bool
+  #endif
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> AquisitoCore.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> AquisitoCore.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = AquisitoCore.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = AquisitoCore.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  public typealias Delegate = any AquisitoCore.Kotlinx_coroutines_coreMutableStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+extension AquisitoCore.Skie.RuntimeKotlin.SkieColdFlowIterator {
+  public struct __Suspend<E> where E : AnyObject {
+    public let __kotlinObject: AquisitoCore.SkieColdFlowIterator<E>
+    public init(_ __kotlinObject: AquisitoCore.SkieColdFlowIterator<E>)
+  }
+}
+public func skie<E>(_ kotlinObject: AquisitoCore.SkieColdFlowIterator<E>) -> AquisitoCore.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend<E> where E : AnyObject
+extension AquisitoCore.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func hasNext() async throws -> AquisitoCore.KotlinBoolean
+}
+extension AquisitoCore.Kotlinx_coroutines_coreFlow {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func collect(collector: any AquisitoCore.Kotlinx_coroutines_coreFlowCollector) async throws
+}
+extension AquisitoCore.Kotlinx_coroutines_coreFlowCollector {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func emit(value: Any?) async throws
+  #endif
+}
+extension AquisitoCore.VerifyCodeUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(email: Swift.String, code: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.AuthRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deleteAccount() async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func forgotPassword(email: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func login(email: Swift.String, password: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func loginSocial(socialDriver: Swift.String, socialToken: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func logout() async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func resetPassword(email: Swift.String, code: Swift.String, password: Swift.String, passwordConfirmation: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func signUp(firstName: Swift.String, lastName: Swift.String, name: Swift.String, email: Swift.String, username: Swift.String, phone: Swift.String?, password: Swift.String?, avatar: Swift.String?, socialDriver: Swift.String?, socialId: Swift.String?) async throws -> any AquisitoCore.ResultViewState
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updatePassword(currentPassword: Swift.String, password: Swift.String, passwordConfirmation: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func verifyCode(email: Swift.String, code: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.UpsertRatingUseCase {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(slug: Swift.String, overallRating: Swift.Int32, foodRating: AquisitoCore.KotlinInt?, serviceRating: AquisitoCore.KotlinInt?, ambienceRating: AquisitoCore.KotlinInt?, priceRating: AquisitoCore.KotlinInt?, comment: Swift.String?, images: [AquisitoCore.KmpFile]) async throws -> any AquisitoCore.ResultViewState
+  #endif
+}
+extension AquisitoCore.RatingPlaceRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getListRatings(slug: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func reactToRating(ratingId: Swift.Int32, reactionType: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func removeToReaction(ratingId: Swift.Int32) async throws -> any AquisitoCore.ResultViewState
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func upsertRating(slug: Swift.String, overallRating: Swift.Int32, foodRating: AquisitoCore.KotlinInt?, serviceRating: AquisitoCore.KotlinInt?, ambienceRating: AquisitoCore.KotlinInt?, priceRating: AquisitoCore.KotlinInt?, comment: Swift.String?, images: [AquisitoCore.KmpFile]) async throws -> any AquisitoCore.ResultViewState
+  #endif
+}
+extension AquisitoCore.UpdateUserProfileUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthDate: Swift.String, phone: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.UserRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getUserData() async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getUserDataOnContext() async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updateUserProfile(firstName: Swift.String, lastName: Swift.String, email: Swift.String, birthDate: Swift.String, phone: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.UpdatePasswordUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(currentPassword: Swift.String, password: Swift.String, passwordConfirmation: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.SocialLoginUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(socialDriver: Swift.String, socialToken: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.SignUpUseCase {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(firstName: Swift.String, lastName: Swift.String, name: Swift.String, email: Swift.String, username: Swift.String, phone: Swift.String?, password: Swift.String?, avatar: Swift.String?, socialDriver: Swift.String?, socialId: Swift.String?) async throws -> any AquisitoCore.ResultViewState
+  #endif
+}
+extension AquisitoCore.SetLocationOnContextUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(district: AquisitoCore.District) async throws
+}
+extension AquisitoCore.LocationRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func clearSelectedDistrict() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func clearSelectionAndContext() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getStoredLocation() async throws -> AquisitoCore.LocationRepositoryStoredLocationResult
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func setSelectedDistrict(district: AquisitoCore.District) async throws
+}
+extension AquisitoCore.SessionManager {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func clearSession() async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getAccessToken() async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getCurrentUser() async throws -> AquisitoCore.User?
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func isLoggedIn() async throws -> AquisitoCore.KotlinBoolean
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func notifyLoggedIn() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func saveUser(user: AquisitoCore.User) async throws
+}
+extension AquisitoCore.ResetPasswordUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(email: Swift.String, code: Swift.String, password: Swift.String, passwordConfirmation: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.RemoveReactionUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(ratingId: Swift.Int32) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.RemovePlaceFromCollectionUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(collectionSlug: Swift.String, placeSlug: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.CollectionRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func addPlaceToCollection(collectionSlug: Swift.String, placeId: Swift.Int32) async throws -> any AquisitoCore.ResultViewState
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func createCollection(name: Swift.String, description: Swift.String?, type: Swift.String, isPublic: Swift.Bool, trackChanges: Swift.Bool) async throws -> any AquisitoCore.ResultViewState
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func removeCollection(collectionSlug: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func removePlaceFromCollection(collectionSlug: Swift.String, placeSlug: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.RemoveCollectionUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(collectionSlug: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.ReactRatingUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(ratingId: Swift.Int32, reactionType: AquisitoCore.ReactionType) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.MarkOnboardingCompletedUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke() async throws
+}
+extension AquisitoCore.OnboardingRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func hasCompletedOnboarding() async throws -> AquisitoCore.KotlinBoolean
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func markOnboardingCompleted() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func resetOnboarding() async throws
+}
+extension AquisitoCore.LogoutUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke() async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.LoginUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(email: Swift.String, password: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.LocationContext {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func clearAll() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func clearDistrict() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func setDistrict(district: AquisitoCore.District) async throws
+}
+extension AquisitoCore.GetListRatingsUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(slug: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.GetUserDataUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke() async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.GetPlacesUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(query: [Swift.String : Swift.String]) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.PlaceRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPlaceDetail(slug: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPlaces(query: [Swift.String : Swift.String]) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.GetPlaceDetailUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(slug: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.GetOnboardingStatusUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke() async throws -> AquisitoCore.KotlinBoolean
+}
+extension AquisitoCore.GetUserDataOnContextUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke() async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.GetCartDetailUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(slug: Swift.String, id: Swift.Int32) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.CartRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getCartDetail(slug: Swift.String, id: Swift.Int32) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.GetAvailableAreaByLocationUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(latitude: Swift.Double, longitude: Swift.Double) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.AreaRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getAvailableAreaByLocation(latitude: Swift.Double, longitude: Swift.Double) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getAvailableAreas() async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.ForgotPasswordUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(email: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.EnsureSetLocationUserUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke() async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.LocationClient {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getApproxLocation() async throws -> AquisitoCore.LocationClientResult
+}
+extension AquisitoCore.DeleteAccountUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke() async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.CreateCollectionUseCase {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(name: Swift.String, description: Swift.String?, type: Swift.String, isPublic: Swift.Bool, trackChanges: Swift.Bool) async throws -> any AquisitoCore.ResultViewState
+  #endif
+}
+extension AquisitoCore.CheckUserLocationUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke() async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.GetAvailableAreasUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke() async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.AddPlaceToCollectionUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(collectionSlug: Swift.String, placeId: Swift.Int32) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.Ktor_client_coreHttpClientEngine {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func execute(data: AquisitoCore.Ktor_client_coreHttpRequestData) async throws -> AquisitoCore.Ktor_client_coreHttpResponseData
+}
+extension AquisitoCore.Kotlinx_coroutines_coreJob {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func join() async throws
+}
+extension AquisitoCore.Skie.KtorUtils.Pipeline {
+  public struct __Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject {
+    public let __kotlinObject: AquisitoCore.Ktor_utilsPipeline<TSubject, TContext>
+    public init(_ __kotlinObject: AquisitoCore.Ktor_utilsPipeline<TSubject, TContext>)
+  }
+}
+public func skie<TSubject, TContext>(_ kotlinObject: AquisitoCore.Ktor_utilsPipeline<TSubject, TContext>) -> AquisitoCore.Skie.KtorUtils.Pipeline.__Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject
+extension AquisitoCore.Skie.KtorUtils.Pipeline.__Suspend {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func execute(context: TContext, subject: TSubject) async throws -> TSubject
+}
+extension AquisitoCore.KotlinSuspendFunction2 {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?, p2: Any?) async throws -> Any?
+  #endif
+}
+extension AquisitoCore.Ktor_client_coreHttpClientCall {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func body(info: AquisitoCore.Ktor_utilsTypeInfo) async throws -> Any
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func bodyNullable(info: AquisitoCore.Ktor_utilsTypeInfo) async throws -> Any?
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getResponseContent() async throws -> any AquisitoCore.Ktor_ioByteReadChannel
+}
+extension AquisitoCore.Ktor_ioByteReadChannel {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func awaitContent() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func discard(max: Swift.Int64) async throws -> AquisitoCore.KotlinLong
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func peekTo(destination: AquisitoCore.Ktor_ioMemory, destinationOffset: Swift.Int64, offset: Swift.Int64, min: Swift.Int64, max: Swift.Int64) async throws -> AquisitoCore.KotlinLong
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readAvailable(dst: AquisitoCore.Ktor_ioChunkBuffer) async throws -> AquisitoCore.KotlinInt
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readAvailable(dst: AquisitoCore.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws -> AquisitoCore.KotlinInt
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readAvailable(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws -> AquisitoCore.KotlinInt
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readAvailable(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws -> AquisitoCore.KotlinInt
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readBoolean() async throws -> AquisitoCore.KotlinBoolean
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readByte() async throws -> AquisitoCore.KotlinByte
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readDouble() async throws -> AquisitoCore.KotlinDouble
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFloat() async throws -> AquisitoCore.KotlinFloat
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFully(dst: AquisitoCore.Ktor_ioChunkBuffer, n: Swift.Int32) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFully(dst: AquisitoCore.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFully(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFully(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readInt() async throws -> AquisitoCore.KotlinInt
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readLong() async throws -> AquisitoCore.KotlinLong
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readPacket(size: Swift.Int32) async throws -> AquisitoCore.Ktor_ioByteReadPacket
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readRemaining(limit: Swift.Int64) async throws -> AquisitoCore.Ktor_ioByteReadPacket
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readShort() async throws -> AquisitoCore.KotlinShort
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  @available(*, deprecated, message: "Use read { } instead.")
+  public func readSuspendableSession(consumer: any AquisitoCore.KotlinSuspendFunction1) async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readUTF8Line(limit: Swift.Int32) async throws -> Swift.String?
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readUTF8LineTo(out: any AquisitoCore.KotlinAppendable, limit: Swift.Int32) async throws -> AquisitoCore.KotlinBoolean
+}
+extension AquisitoCore.KotlinSuspendFunction1 {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?) async throws -> Any?
+  #endif
+}
+extension AquisitoCore.CollectionDao {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func clearCollections() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func insertCollections(collections: [AquisitoCore.CollectionEntity]) async throws
+}
+extension AquisitoCore.Room_runtimeInvalidationTracker {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func refresh(tables: AquisitoCore.KotlinArray<Foundation.NSString>) async throws -> AquisitoCore.KotlinBoolean
+}
+extension AquisitoCore.AuthLocalDataSource {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func clearAccessToken() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func clearUser() async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getAccessToken() async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getUser() async throws -> Swift.String?
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func saveAccessToken(token: Swift.String) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func saveUser(userJson: Swift.String) async throws
+}
+extension AquisitoCore.KeyValueStorage {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func clear() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getBoolean(key: Swift.String, defaultValue: Swift.Bool) async throws -> AquisitoCore.KotlinBoolean
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getString(key: Swift.String) async throws -> Swift.String?
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func putBoolean(key: Swift.String, value: Swift.Bool) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func putString(key: Swift.String, value: Swift.String) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func remove(key: Swift.String) async throws
+}
+extension AquisitoCore.LocationStorage {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func clearSelected() async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getSelectedDistrict() async throws -> AquisitoCore.District?
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func setSelected(district: AquisitoCore.District) async throws
+}
+extension AquisitoCore.AreaApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getAvailableAreaByLocation(request: AquisitoCore.LatLongRequest) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getAvailableAreas() async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.AuthApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deleteAccount() async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func forgotPassword(request: AquisitoCore.ForgotPasswordRequestDto) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func login(request: AquisitoCore.LoginRequestDto) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func loginSocial(request: AquisitoCore.SocialLoginRequestDto) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func logout() async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func resetPassword(request: AquisitoCore.ResetPasswordRequestDto) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func signUp(request: AquisitoCore.SignUpRequestDto) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updatePassword(request: AquisitoCore.UpdatePasswordRequestDto) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func verifyCode(request: AquisitoCore.VerifyCodeRequestDto) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.CartApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getCartDetail(slug: Swift.String, id: Swift.Int32) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.CollectionApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func addPlaceToCollection(collectionSlug: Swift.String, placeId: Swift.Int32) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func createCollection(request: AquisitoCore.CreateCollectionRequestDto) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getCollection() async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func removeCollection(collectionSlug: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func removePlaceFromCollection(collectionSlug: Swift.String, placeSlug: Swift.String) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.ErrorHandler {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func parseError(exception: AquisitoCore.KotlinException) async throws -> AquisitoCore.Error
+}
+extension AquisitoCore.PlaceApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPlaceDetail(slug: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPlaces(query: [Swift.String : Swift.String]) async throws -> any AquisitoCore.ResultViewState
+}
+extension AquisitoCore.RatingPlaceApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getListRating(slug: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func reactToRating(ratingId: Swift.Int32, reactionType: Swift.String) async throws -> any AquisitoCore.ResultViewState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func removeReaction(ratingId: Swift.Int32) async throws -> any AquisitoCore.ResultViewState
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func upsertRating(slug: Swift.String, overallRating: Swift.Int32, foodRating: AquisitoCore.KotlinInt?, serviceRating: AquisitoCore.KotlinInt?, ambienceRating: AquisitoCore.KotlinInt?, priceRating: AquisitoCore.KotlinInt?, comment: Swift.String?, images: [AquisitoCore.KmpFile]) async throws -> any AquisitoCore.ResultViewState
+  #endif
+}
+extension AquisitoCore.Ktor_httpOutgoingContent.ProtocolUpgrade {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func upgrade(input: any AquisitoCore.Ktor_ioByteReadChannel, output: any AquisitoCore.Ktor_ioByteWriteChannel, engineContext: any AquisitoCore.KotlinCoroutineContext, userContext: any AquisitoCore.KotlinCoroutineContext) async throws -> any AquisitoCore.Kotlinx_coroutines_coreJob
+}
+extension AquisitoCore.Ktor_ioByteWriteChannel {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func awaitFreeSpace() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeAvailable(src: AquisitoCore.Ktor_ioChunkBuffer) async throws -> AquisitoCore.KotlinInt
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeAvailable(src: AquisitoCore.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws -> AquisitoCore.KotlinInt
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeAvailable(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws -> AquisitoCore.KotlinInt
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeAvailable(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws -> AquisitoCore.KotlinInt
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeByte(b: Swift.Int8) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeDouble(d: Swift.Double) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFloat(f: Swift.Float) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(memory: AquisitoCore.Ktor_ioMemory, startIndex: Swift.Int32, endIndex: Swift.Int32) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(src: AquisitoCore.Ktor_ioBuffer) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(src: AquisitoCore.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeInt(i: Swift.Int32) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeLong(l: Swift.Int64) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writePacket(packet: AquisitoCore.Ktor_ioByteReadPacket) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeShort(s: Swift.Int16) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  @available(*, deprecated, message: "Use write { } instead.")
+  public func writeSuspendSession(visitor: any AquisitoCore.KotlinSuspendFunction1) async throws
+}
+extension AquisitoCore.Ktor_httpOutgoingContent.WriteChannelContent {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeTo(channel: any AquisitoCore.Ktor_ioByteWriteChannel) async throws
+}
+public func SkieKotlinFlow<T>(_ flow: AquisitoCore.SkieSwiftFlow<T>) -> AquisitoCore.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>) -> AquisitoCore.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: AquisitoCore.SkieSwiftStateFlow<T>) -> AquisitoCore.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: AquisitoCore.SkieSwiftFlow<T>) -> AquisitoCore.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>) -> AquisitoCore.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: AquisitoCore.SkieSwiftStateFlow<T>) -> AquisitoCore.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension AquisitoCore.SkieSwiftFlow where T : AnyObject {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+}
+extension AquisitoCore.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension AquisitoCore.SkieSwiftOptionalFlow where T : AnyObject {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension AquisitoCore.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>) -> AquisitoCore.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftStateFlow<T>) -> AquisitoCore.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>) -> AquisitoCore.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftStateFlow<T>) -> AquisitoCore.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension AquisitoCore.SkieSwiftSharedFlow where T : AnyObject {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+}
+extension AquisitoCore.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension AquisitoCore.SkieSwiftOptionalSharedFlow where T : AnyObject {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension AquisitoCore.SkieSwiftOptionalSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinMutableSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension AquisitoCore.SkieSwiftMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>)
+}
+extension AquisitoCore.SkieSwiftMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>)
+}
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>) -> AquisitoCore.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension AquisitoCore.SkieSwiftOptionalMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+extension AquisitoCore.SkieSwiftOptionalMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+public func SkieKotlinStateFlow<T>(_ flow: AquisitoCore.SkieSwiftStateFlow<T>) -> AquisitoCore.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: AquisitoCore.SkieSwiftStateFlow<T>) -> AquisitoCore.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinStateFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension AquisitoCore.SkieSwiftStateFlow where T : AnyObject {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+}
+extension AquisitoCore.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AquisitoCore.SkieSwiftStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AquisitoCore.SkieSwiftStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension AquisitoCore.SkieSwiftOptionalStateFlow where T : AnyObject {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension AquisitoCore.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableStateFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinMutableStateFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension AquisitoCore.SkieSwiftMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+}
+extension AquisitoCore.SkieSwiftMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>) -> AquisitoCore.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension AquisitoCore.SkieSwiftOptionalMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension AquisitoCore.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: AquisitoCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: AquisitoCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+@frozen public enum KotlinLazyThreadSafetyMode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case synchronized
+  case publication
+  case none
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.__KotlinLazyThreadSafetyMode, result: inout AquisitoCore.KotlinLazyThreadSafetyMode?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__KotlinLazyThreadSafetyMode, result: inout AquisitoCore.KotlinLazyThreadSafetyMode?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__KotlinLazyThreadSafetyMode?) -> AquisitoCore.KotlinLazyThreadSafetyMode
+  #endif
+  public func _bridgeToObjectiveC() -> AquisitoCore.__KotlinLazyThreadSafetyMode
+  public typealias _ObjectiveCType = AquisitoCore.__KotlinLazyThreadSafetyMode
+  public static func == (a: AquisitoCore.KotlinLazyThreadSafetyMode, b: AquisitoCore.KotlinLazyThreadSafetyMode) -> Swift.Bool
+  public typealias AllCases = [AquisitoCore.KotlinLazyThreadSafetyMode]
+  nonisolated public static var allCases: [AquisitoCore.KotlinLazyThreadSafetyMode] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AquisitoCore.KotlinLazyThreadSafetyMode {
+  public func toKotlinEnum() -> AquisitoCore.__KotlinLazyThreadSafetyMode
+}
+extension AquisitoCore.__KotlinLazyThreadSafetyMode {
+  public func toSwiftEnum() -> AquisitoCore.KotlinLazyThreadSafetyMode
+}
+@frozen public enum KotlinKVariance : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case invariant
+  case `in`
+  case out
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.__KotlinKVariance, result: inout AquisitoCore.KotlinKVariance?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__KotlinKVariance, result: inout AquisitoCore.KotlinKVariance?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__KotlinKVariance?) -> AquisitoCore.KotlinKVariance
+  #endif
+  public func _bridgeToObjectiveC() -> AquisitoCore.__KotlinKVariance
+  public typealias _ObjectiveCType = AquisitoCore.__KotlinKVariance
+  public static func == (a: AquisitoCore.KotlinKVariance, b: AquisitoCore.KotlinKVariance) -> Swift.Bool
+  public typealias AllCases = [AquisitoCore.KotlinKVariance]
+  nonisolated public static var allCases: [AquisitoCore.KotlinKVariance] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AquisitoCore.KotlinKVariance {
+  public func toKotlinEnum() -> AquisitoCore.__KotlinKVariance
+}
+extension AquisitoCore.__KotlinKVariance {
+  public func toSwiftEnum() -> AquisitoCore.KotlinKVariance
+}
+extension AquisitoCore.Currency {
+  public typealias SymbolPosition = AquisitoCore.__Bridge__Currency_SymbolPosition
+}
+extension AquisitoCore.__Bridge__Currency_SymbolPosition {
+  public func toKotlinEnum() -> AquisitoCore.Currency.__SymbolPosition
+}
+extension AquisitoCore.Currency.__SymbolPosition {
+  public func toSwiftEnum() -> AquisitoCore.Currency.SymbolPosition
+}
+@frozen public enum __Bridge__Currency_SymbolPosition : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case before
+  case after
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.Currency.__SymbolPosition, result: inout AquisitoCore.Currency.SymbolPosition?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.Currency.__SymbolPosition, result: inout AquisitoCore.Currency.SymbolPosition?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.Currency.__SymbolPosition?) -> AquisitoCore.__Bridge__Currency_SymbolPosition
+  #endif
+  public func _bridgeToObjectiveC() -> AquisitoCore.Currency.__SymbolPosition
+  public typealias _ObjectiveCType = AquisitoCore.Currency.__SymbolPosition
+  public static func == (a: AquisitoCore.__Bridge__Currency_SymbolPosition, b: AquisitoCore.__Bridge__Currency_SymbolPosition) -> Swift.Bool
+  public typealias AllCases = [AquisitoCore.__Bridge__Currency_SymbolPosition]
+  nonisolated public static var allCases: [AquisitoCore.__Bridge__Currency_SymbolPosition] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public enum ReactionType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case like
+  case dislike
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.__ReactionType, result: inout AquisitoCore.ReactionType?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__ReactionType, result: inout AquisitoCore.ReactionType?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__ReactionType?) -> AquisitoCore.ReactionType
+  #endif
+  public func _bridgeToObjectiveC() -> AquisitoCore.__ReactionType
+  public typealias _ObjectiveCType = AquisitoCore.__ReactionType
+  public static func == (a: AquisitoCore.ReactionType, b: AquisitoCore.ReactionType) -> Swift.Bool
+  public typealias AllCases = [AquisitoCore.ReactionType]
+  nonisolated public static var allCases: [AquisitoCore.ReactionType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AquisitoCore.ReactionType {
+  public func toKotlinEnum() -> AquisitoCore.__ReactionType
+}
+extension AquisitoCore.__ReactionType {
+  public func toSwiftEnum() -> AquisitoCore.ReactionType
+}
+@frozen public enum RatingStatus : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case unrated
+  case preliminary
+  case consolidated
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var status: Swift.String {
+    get
+  }
+  public static var companion: AquisitoCore.__RatingStatus.Companion {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.__RatingStatus, result: inout AquisitoCore.RatingStatus?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__RatingStatus, result: inout AquisitoCore.RatingStatus?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__RatingStatus?) -> AquisitoCore.RatingStatus
+  #endif
+  public func _bridgeToObjectiveC() -> AquisitoCore.__RatingStatus
+  public typealias _ObjectiveCType = AquisitoCore.__RatingStatus
+  public typealias Companion = AquisitoCore.__RatingStatus.Companion
+  public static func == (a: AquisitoCore.RatingStatus, b: AquisitoCore.RatingStatus) -> Swift.Bool
+  public typealias AllCases = [AquisitoCore.RatingStatus]
+  nonisolated public static var allCases: [AquisitoCore.RatingStatus] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AquisitoCore.RatingStatus {
+  public func toKotlinEnum() -> AquisitoCore.__RatingStatus
+}
+extension AquisitoCore.__RatingStatus {
+  public func toSwiftEnum() -> AquisitoCore.RatingStatus
+}
+@frozen public enum PlaceStatus : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case open
+  case closed
+  case opensSoon
+  case closesSoon
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.__PlaceStatus, result: inout AquisitoCore.PlaceStatus?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__PlaceStatus, result: inout AquisitoCore.PlaceStatus?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__PlaceStatus?) -> AquisitoCore.PlaceStatus
+  #endif
+  public func _bridgeToObjectiveC() -> AquisitoCore.__PlaceStatus
+  public typealias _ObjectiveCType = AquisitoCore.__PlaceStatus
+  public static func == (a: AquisitoCore.PlaceStatus, b: AquisitoCore.PlaceStatus) -> Swift.Bool
+  public typealias AllCases = [AquisitoCore.PlaceStatus]
+  nonisolated public static var allCases: [AquisitoCore.PlaceStatus] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AquisitoCore.PlaceStatus {
+  public func toKotlinEnum() -> AquisitoCore.__PlaceStatus
+}
+extension AquisitoCore.__PlaceStatus {
+  public func toSwiftEnum() -> AquisitoCore.PlaceStatus
+}
+@frozen public enum Koin_coreLevel : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case debug
+  case info
+  case warning
+  case error
+  case none
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.__Koin_coreLevel, result: inout AquisitoCore.Koin_coreLevel?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__Koin_coreLevel, result: inout AquisitoCore.Koin_coreLevel?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__Koin_coreLevel?) -> AquisitoCore.Koin_coreLevel
+  #endif
+  public func _bridgeToObjectiveC() -> AquisitoCore.__Koin_coreLevel
+  public typealias _ObjectiveCType = AquisitoCore.__Koin_coreLevel
+  public static func == (a: AquisitoCore.Koin_coreLevel, b: AquisitoCore.Koin_coreLevel) -> Swift.Bool
+  public typealias AllCases = [AquisitoCore.Koin_coreLevel]
+  nonisolated public static var allCases: [AquisitoCore.Koin_coreLevel] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AquisitoCore.Koin_coreLevel {
+  public func toKotlinEnum() -> AquisitoCore.__Koin_coreLevel
+}
+extension AquisitoCore.__Koin_coreLevel {
+  public func toSwiftEnum() -> AquisitoCore.Koin_coreLevel
+}
+@frozen public enum Koin_coreKind : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case singleton
+  case factory
+  case scoped
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.__Koin_coreKind, result: inout AquisitoCore.Koin_coreKind?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__Koin_coreKind, result: inout AquisitoCore.Koin_coreKind?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__Koin_coreKind?) -> AquisitoCore.Koin_coreKind
+  #endif
+  public func _bridgeToObjectiveC() -> AquisitoCore.__Koin_coreKind
+  public typealias _ObjectiveCType = AquisitoCore.__Koin_coreKind
+  public static func == (a: AquisitoCore.Koin_coreKind, b: AquisitoCore.Koin_coreKind) -> Swift.Bool
+  public typealias AllCases = [AquisitoCore.Koin_coreKind]
+  nonisolated public static var allCases: [AquisitoCore.Koin_coreKind] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AquisitoCore.Koin_coreKind {
+  public func toKotlinEnum() -> AquisitoCore.__Koin_coreKind
+}
+extension AquisitoCore.__Koin_coreKind {
+  public func toSwiftEnum() -> AquisitoCore.Koin_coreKind
+}
+@frozen public enum Ktor_utilsMonth : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case january
+  case february
+  case march
+  case april
+  case may
+  case june
+  case july
+  case august
+  case september
+  case october
+  case november
+  case december
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: AquisitoCore.__Ktor_utilsMonth.Companion {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.__Ktor_utilsMonth, result: inout AquisitoCore.Ktor_utilsMonth?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__Ktor_utilsMonth, result: inout AquisitoCore.Ktor_utilsMonth?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__Ktor_utilsMonth?) -> AquisitoCore.Ktor_utilsMonth
+  #endif
+  public func _bridgeToObjectiveC() -> AquisitoCore.__Ktor_utilsMonth
+  public typealias _ObjectiveCType = AquisitoCore.__Ktor_utilsMonth
+  public typealias Companion = AquisitoCore.__Ktor_utilsMonth.Companion
+  public static func == (a: AquisitoCore.Ktor_utilsMonth, b: AquisitoCore.Ktor_utilsMonth) -> Swift.Bool
+  public typealias AllCases = [AquisitoCore.Ktor_utilsMonth]
+  nonisolated public static var allCases: [AquisitoCore.Ktor_utilsMonth] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AquisitoCore.Ktor_utilsMonth {
+  public func toKotlinEnum() -> AquisitoCore.__Ktor_utilsMonth
+}
+extension AquisitoCore.__Ktor_utilsMonth {
+  public func toSwiftEnum() -> AquisitoCore.Ktor_utilsMonth
+}
+@frozen public enum Ktor_utilsWeekDay : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case monday
+  case tuesday
+  case wednesday
+  case thursday
+  case friday
+  case saturday
+  case sunday
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: AquisitoCore.__Ktor_utilsWeekDay.Companion {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: AquisitoCore.__Ktor_utilsWeekDay, result: inout AquisitoCore.Ktor_utilsWeekDay?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__Ktor_utilsWeekDay, result: inout AquisitoCore.Ktor_utilsWeekDay?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: AquisitoCore.__Ktor_utilsWeekDay?) -> AquisitoCore.Ktor_utilsWeekDay
+  #endif
+  public func _bridgeToObjectiveC() -> AquisitoCore.__Ktor_utilsWeekDay
+  public typealias _ObjectiveCType = AquisitoCore.__Ktor_utilsWeekDay
+  public typealias Companion = AquisitoCore.__Ktor_utilsWeekDay.Companion
+  public static func == (a: AquisitoCore.Ktor_utilsWeekDay, b: AquisitoCore.Ktor_utilsWeekDay) -> Swift.Bool
+  public typealias AllCases = [AquisitoCore.Ktor_utilsWeekDay]
+  nonisolated public static var allCases: [AquisitoCore.Ktor_utilsWeekDay] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AquisitoCore.Ktor_utilsWeekDay {
+  public func toKotlinEnum() -> AquisitoCore.__Ktor_utilsWeekDay
+}
+extension AquisitoCore.__Ktor_utilsWeekDay {
+  public func toSwiftEnum() -> AquisitoCore.Ktor_utilsWeekDay
+}
+extension AquisitoCore.Skie.RuntimeKotlin.Skie_SuspendResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case canceled(AquisitoCore.Skie_SuspendResult.Canceled)
+    case error(AquisitoCore.Skie_SuspendResult.Error)
+    case success(AquisitoCore.Skie_SuspendResult.Success)
+    public static func == (a: AquisitoCore.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: AquisitoCore.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : AquisitoCore.Skie_SuspendResult
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : AquisitoCore.Skie_SuspendResult
+#endif
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause0 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed, b: AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed where __Sealed : AquisitoCore.Kotlinx_coroutines_coreSelectClause0
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed? where __Sealed : AquisitoCore.Kotlinx_coroutines_coreSelectClause0
+#endif
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause {
+  @frozen public enum __Sealed {
+    case selectClause0(any AquisitoCore.Kotlinx_coroutines_coreSelectClause0)
+    case selectClause1(any AquisitoCore.Kotlinx_coroutines_coreSelectClause1)
+    case selectClause2(any AquisitoCore.Kotlinx_coroutines_coreSelectClause2)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed where __Sealed : AquisitoCore.Kotlinx_coroutines_coreSelectClause
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed? where __Sealed : AquisitoCore.Kotlinx_coroutines_coreSelectClause
+#endif
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectInstance {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: AquisitoCore.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed, b: AquisitoCore.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed where __Sealed : AquisitoCore.Kotlinx_coroutines_coreSelectInstance
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed? where __Sealed : AquisitoCore.Kotlinx_coroutines_coreSelectInstance
+#endif
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause1 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed, b: AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed where __Sealed : AquisitoCore.Kotlinx_coroutines_coreSelectClause1
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed? where __Sealed : AquisitoCore.Kotlinx_coroutines_coreSelectClause1
+#endif
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause2 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed, b: AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed where __Sealed : AquisitoCore.Kotlinx_coroutines_coreSelectClause2
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed? where __Sealed : AquisitoCore.Kotlinx_coroutines_coreSelectClause2
+#endif
+extension AquisitoCore.Skie.Shared.ResultViewState {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case error(AquisitoCore.Error)
+    case success(AquisitoCore.Success<Swift.AnyObject>)
+    public static func == (a: AquisitoCore.Skie.Shared.ResultViewState.__Sealed, b: AquisitoCore.Skie.Shared.ResultViewState.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.Shared.ResultViewState.__Sealed where __Sealed : AquisitoCore.ResultViewState
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.Shared.ResultViewState.__Sealed? where __Sealed : AquisitoCore.ResultViewState
+#endif
+extension AquisitoCore.Skie.Shared.LocationRepository.StoredLocationResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case missing(AquisitoCore.LocationRepositoryStoredLocationResult.Missing)
+    case valid(AquisitoCore.LocationRepositoryStoredLocationResult.Valid)
+    public static func == (a: AquisitoCore.Skie.Shared.LocationRepository.StoredLocationResult.__Sealed, b: AquisitoCore.Skie.Shared.LocationRepository.StoredLocationResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.Shared.LocationRepository.StoredLocationResult.__Sealed where __Sealed : AquisitoCore.LocationRepositoryStoredLocationResult
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.Shared.LocationRepository.StoredLocationResult.__Sealed? where __Sealed : AquisitoCore.LocationRepositoryStoredLocationResult
+#endif
+extension AquisitoCore.Skie.Shared.LocationClientResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case permissionDenied(AquisitoCore.LocationClientResult.PermissionDenied)
+    case servicesDisabled(AquisitoCore.LocationClientResult.ServicesDisabled)
+    case success(AquisitoCore.LocationClientResult.Success)
+    case unknown(AquisitoCore.LocationClientResult.Unknown)
+    public static func == (a: AquisitoCore.Skie.Shared.LocationClientResult.__Sealed, b: AquisitoCore.Skie.Shared.LocationClientResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.Shared.LocationClientResult.__Sealed where __Sealed : AquisitoCore.LocationClientResult
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.Shared.LocationClientResult.__Sealed? where __Sealed : AquisitoCore.LocationClientResult
+#endif
+extension AquisitoCore.Skie.Shared.LocationError {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case districtNotFound(AquisitoCore.LocationError.DistrictNotFound)
+    case permissionDenied(AquisitoCore.LocationError.PermissionDenied)
+    case servicesDisabled(AquisitoCore.LocationError.ServicesDisabled)
+    case unknown(AquisitoCore.LocationError.Unknown)
+    public static func == (a: AquisitoCore.Skie.Shared.LocationError.__Sealed, b: AquisitoCore.Skie.Shared.LocationError.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.Shared.LocationError.__Sealed where __Sealed : AquisitoCore.LocationError
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.Shared.LocationError.__Sealed? where __Sealed : AquisitoCore.LocationError
+#endif
+extension AquisitoCore.Skie.Shared.LocationEvent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case allCleared(AquisitoCore.LocationEvent.AllCleared)
+    case districtCleared(AquisitoCore.LocationEvent.DistrictCleared)
+    case districtSet(AquisitoCore.LocationEvent.DistrictSet)
+    public static func == (a: AquisitoCore.Skie.Shared.LocationEvent.__Sealed, b: AquisitoCore.Skie.Shared.LocationEvent.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.Shared.LocationEvent.__Sealed where __Sealed : AquisitoCore.LocationEvent
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.Shared.LocationEvent.__Sealed? where __Sealed : AquisitoCore.LocationEvent
+#endif
+extension AquisitoCore.Skie.Shared.AuthEvent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case loggedIn(AquisitoCore.AuthEvent.LoggedIn)
+    case loggedOut(AquisitoCore.AuthEvent.LoggedOut)
+    public static func == (a: AquisitoCore.Skie.Shared.AuthEvent.__Sealed, b: AquisitoCore.Skie.Shared.AuthEvent.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.Shared.AuthEvent.__Sealed where __Sealed : AquisitoCore.AuthEvent
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.Shared.AuthEvent.__Sealed? where __Sealed : AquisitoCore.AuthEvent
+#endif
+extension AquisitoCore.Skie.KotlinxSerializationCore.SerialKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case polymorphicKind(AquisitoCore.Kotlinx_serialization_corePolymorphicKind)
+    case primitiveKind(AquisitoCore.Kotlinx_serialization_corePrimitiveKind)
+    case cONTEXTUAL(AquisitoCore.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
+    case eNUM(AquisitoCore.Kotlinx_serialization_coreSerialKind.ENUM)
+    case structureKind(AquisitoCore.Kotlinx_serialization_coreStructureKind)
+    public static func == (a: AquisitoCore.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: AquisitoCore.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : AquisitoCore.Kotlinx_serialization_coreSerialKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : AquisitoCore.Kotlinx_serialization_coreSerialKind
+#endif
+extension AquisitoCore.Skie.KotlinxSerializationCore.SerializersModule {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: AquisitoCore.Skie.KotlinxSerializationCore.SerializersModule.__Sealed, b: AquisitoCore.Skie.KotlinxSerializationCore.SerializersModule.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : AquisitoCore.Kotlinx_serialization_coreSerializersModule
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : AquisitoCore.Kotlinx_serialization_coreSerializersModule
+#endif
+extension AquisitoCore.Skie.KotlinxSerializationCore.PolymorphicKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case oPEN(AquisitoCore.Kotlinx_serialization_corePolymorphicKind.OPEN)
+    case sEALED(AquisitoCore.Kotlinx_serialization_corePolymorphicKind.SEALED)
+    public static func == (a: AquisitoCore.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: AquisitoCore.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : AquisitoCore.Kotlinx_serialization_corePolymorphicKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : AquisitoCore.Kotlinx_serialization_corePolymorphicKind
+#endif
+extension AquisitoCore.Skie.KotlinxSerializationCore.PrimitiveKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case bOOLEAN(AquisitoCore.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
+    case bYTE(AquisitoCore.Kotlinx_serialization_corePrimitiveKind.BYTE)
+    case cHAR(AquisitoCore.Kotlinx_serialization_corePrimitiveKind.CHAR)
+    case dOUBLE(AquisitoCore.Kotlinx_serialization_corePrimitiveKind.DOUBLE)
+    case fLOAT(AquisitoCore.Kotlinx_serialization_corePrimitiveKind.FLOAT)
+    case iNT(AquisitoCore.Kotlinx_serialization_corePrimitiveKind.INT)
+    case lONG(AquisitoCore.Kotlinx_serialization_corePrimitiveKind.LONG)
+    case sHORT(AquisitoCore.Kotlinx_serialization_corePrimitiveKind.SHORT)
+    case sTRING(AquisitoCore.Kotlinx_serialization_corePrimitiveKind.STRING)
+    public static func == (a: AquisitoCore.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: AquisitoCore.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : AquisitoCore.Kotlinx_serialization_corePrimitiveKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : AquisitoCore.Kotlinx_serialization_corePrimitiveKind
+#endif
+extension AquisitoCore.Skie.KotlinxSerializationCore.StructureKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cLASS(AquisitoCore.Kotlinx_serialization_coreStructureKind.CLASS)
+    case lIST(AquisitoCore.Kotlinx_serialization_coreStructureKind.LIST)
+    case mAP(AquisitoCore.Kotlinx_serialization_coreStructureKind.MAP)
+    case oBJECT(AquisitoCore.Kotlinx_serialization_coreStructureKind.OBJECT)
+    public static func == (a: AquisitoCore.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: AquisitoCore.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : AquisitoCore.Kotlinx_serialization_coreStructureKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : AquisitoCore.Kotlinx_serialization_coreStructureKind
+#endif
+extension AquisitoCore.Skie.KtorHttp.OutgoingContent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case byteArrayContent(AquisitoCore.Ktor_httpOutgoingContent.ByteArrayContent)
+    case noContent(AquisitoCore.Ktor_httpOutgoingContent.NoContent)
+    case protocolUpgrade(AquisitoCore.Ktor_httpOutgoingContent.ProtocolUpgrade)
+    case readChannelContent(AquisitoCore.Ktor_httpOutgoingContent.ReadChannelContent)
+    case writeChannelContent(AquisitoCore.Ktor_httpOutgoingContent.WriteChannelContent)
+    public static func == (a: AquisitoCore.Skie.KtorHttp.OutgoingContent.__Sealed, b: AquisitoCore.Skie.KtorHttp.OutgoingContent.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KtorHttp.OutgoingContent.__Sealed where __Sealed : AquisitoCore.Ktor_httpOutgoingContent
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KtorHttp.OutgoingContent.__Sealed? where __Sealed : AquisitoCore.Ktor_httpOutgoingContent
+#endif
+extension AquisitoCore.Skie.KotlinxSerializationJson.JsonElement {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case jsonPrimitive(AquisitoCore.Kotlinx_serialization_jsonJsonPrimitive)
+    case `else`
+    public static func == (a: AquisitoCore.Skie.KotlinxSerializationJson.JsonElement.__Sealed, b: AquisitoCore.Skie.KotlinxSerializationJson.JsonElement.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KotlinxSerializationJson.JsonElement.__Sealed where __Sealed : AquisitoCore.Kotlinx_serialization_jsonJsonElement
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KotlinxSerializationJson.JsonElement.__Sealed? where __Sealed : AquisitoCore.Kotlinx_serialization_jsonJsonElement
+#endif
+extension AquisitoCore.Skie.KotlinxSerializationJson.JsonPrimitive {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case jsonNull(AquisitoCore.Kotlinx_serialization_jsonJsonNull)
+    case `else`
+    public static func == (a: AquisitoCore.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed, b: AquisitoCore.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> AquisitoCore.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed where __Sealed : AquisitoCore.Kotlinx_serialization_jsonJsonPrimitive
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> AquisitoCore.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed? where __Sealed : AquisitoCore.Kotlinx_serialization_jsonJsonPrimitive
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+public func doInitKoinAndApp(platformContext: AquisitoCore.PlatformContext, currencyCode: Swift.String?, appDeclaration: @escaping (AquisitoCore.Koin_coreKoinApplication) -> Swift.Void)
+#endif
+public func doInitLogger()
+public func getCurrentDayOfWeek() -> Swift.String
+public func getCurrentTime() -> AquisitoCore.KotlinPair<AquisitoCore.KotlinInt, AquisitoCore.KotlinInt>
+public var isDebugBuild: Swift.Bool {
+  get
+}
+public func getPlatform() -> any AquisitoCore.Platform
+public var areaModule: AquisitoCore.Koin_coreModule {
+  get
+}
+public var authenticationModule: AquisitoCore.Koin_coreModule {
+  get
+}
+public var cartModule: AquisitoCore.Koin_coreModule {
+  get
+}
+public var collectionModule: AquisitoCore.Koin_coreModule {
+  get
+}
+public var coreModule: AquisitoCore.Koin_coreModule {
+  get
+}
+public var locationModule: AquisitoCore.Koin_coreModule {
+  get
+}
+public var networkModule: AquisitoCore.Koin_coreModule {
+  get
+}
+public var placeModule: AquisitoCore.Koin_coreModule {
+  get
+}
+public var ratingPlaceModule: AquisitoCore.Koin_coreModule {
+  get
+}
+public var userModule: AquisitoCore.Koin_coreModule {
+  get
+}
+extension Swift.Double {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toCurrencyString(currency: AquisitoCore.Currency?) -> Swift.String
+  #endif
+}
+extension Swift.Int32 {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toCurrencyString(currency: AquisitoCore.Currency?) -> Swift.String
+  #endif
+}
+extension Swift.Float {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toCurrencyString(currency: AquisitoCore.Currency?) -> Swift.String
+  #endif
+}
+extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toCurrencyString(currency: AquisitoCore.Currency?) -> Swift.String
+  #endif
+}
+public func haversineMeters(a: AquisitoCore.GeoPoint, b: AquisitoCore.GeoPoint) -> Swift.Double
+public func createDatabase(context: AquisitoCore.PlatformContext) -> AquisitoCore.AppDatabase
+public func createKeyValueStorage(context: AquisitoCore.PlatformContext) -> any AquisitoCore.KeyValueStorage
+public func createLocationClient(platformContext: AquisitoCore.PlatformContext) -> any AquisitoCore.LocationClient
+public var DEFAULT_MATCH_RADIUS_M: Swift.Double {
+  get
+}
+public var LOCATION_TTL_MS: Swift.Int64 {
+  get
+}
+extension AquisitoCore.KotlinLazyThreadSafetyMode : Swift.Sendable {}
+extension AquisitoCore.KotlinLazyThreadSafetyMode : Swift.BitwiseCopyable {}
+extension AquisitoCore.KotlinKVariance : Swift.Sendable {}
+extension AquisitoCore.KotlinKVariance : Swift.BitwiseCopyable {}
+extension AquisitoCore.__Bridge__Currency_SymbolPosition : Swift.Sendable {}
+extension AquisitoCore.__Bridge__Currency_SymbolPosition : Swift.BitwiseCopyable {}
+extension AquisitoCore.ReactionType : Swift.Sendable {}
+extension AquisitoCore.ReactionType : Swift.BitwiseCopyable {}
+extension AquisitoCore.RatingStatus : Swift.Sendable {}
+extension AquisitoCore.RatingStatus : Swift.BitwiseCopyable {}
+extension AquisitoCore.PlaceStatus : Swift.Sendable {}
+extension AquisitoCore.PlaceStatus : Swift.BitwiseCopyable {}
+extension AquisitoCore.Koin_coreLevel : Swift.Sendable {}
+extension AquisitoCore.Koin_coreLevel : Swift.BitwiseCopyable {}
+extension AquisitoCore.Koin_coreKind : Swift.Sendable {}
+extension AquisitoCore.Koin_coreKind : Swift.BitwiseCopyable {}
+extension AquisitoCore.Ktor_utilsMonth : Swift.Sendable {}
+extension AquisitoCore.Ktor_utilsMonth : Swift.BitwiseCopyable {}
+extension AquisitoCore.Ktor_utilsWeekDay : Swift.Sendable {}
+extension AquisitoCore.Ktor_utilsWeekDay : Swift.BitwiseCopyable {}
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.Sendable {}
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.BitwiseCopyable {}
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.Sendable {}
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.BitwiseCopyable {}
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.Sendable {}
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.BitwiseCopyable {}
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.Sendable {}
+extension AquisitoCore.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.BitwiseCopyable {}
+extension AquisitoCore.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}
+extension AquisitoCore.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.BitwiseCopyable {}
